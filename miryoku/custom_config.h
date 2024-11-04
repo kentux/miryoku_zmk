@@ -4,10 +4,11 @@
 / {
     macros {
         e_caret: e_caret {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
-                = <&macro_tap &kp CARET &kp E>
+                = <&kp CARET>
+                , <&kp E>
                 ;
         };
     };
