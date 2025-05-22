@@ -38,5 +38,3 @@
 #else
   #include "miryoku_behaviors.h"
 #endif
-
-#include "miryoku_studio.h"
