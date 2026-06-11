@@ -1,12 +1,12 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example tbkmini nice_nano/v2'
+name: 'Build Example tbkmini nice_nano/nrf52840'
 on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano/v2"]'
+      board: '["nice_nano/nrf52840"]'
       shield: '["tbkmini_left","tbkmini_right"]'
